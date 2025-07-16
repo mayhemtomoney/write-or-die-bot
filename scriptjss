@@ -1,0 +1,16 @@
+document.getElementById("botForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formula = document.getElementById("formula").value;
+  const topic = document.getElementById("topic").value;
+
+  // Simulated response (we'll connect real AI later)
+  const generated = `Formula: ${formula}\nTopic: ${topic}\n\nHere’s your chaotic masterpiece:\n\n🔥 “This post slaps harder than a Centrelink rejection at 9am. Let’s talk about ${topic}...”`;
+
+  document.getElementById("output").innerText = generated;
+  document.getElementById("outputContainer").classList.remove("hidden");
+});
+
+document.getElementById("saveBtn").addEventListener("click", function () {
+  alert("Post saved to your chaotic Content Dungeon™ (not really, yet. But soon.)");
+});
