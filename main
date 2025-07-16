@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write or Die Bot™</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⚰️ Write or Die Bot™</h1>
+    <p class="subtext">Choose your formula. Drop your chaos. Let the bot do its dirty work.</p>
+
+    <form id="botForm">
+      <label for="formula">Choose your formula:</label>
+      <select id="formula" required>
+        <option value="" disabled selected>Select one</option>
+        <option value="chaos-core">Chaos-Core Hook</option>
+        <option value="rant-mode">Shitpost Rant</option>
+        <option value="threadstorm">Viral Threadstorm</option>
+      </select>
+
+      <label for="topic">What’s the post about?</label>
+      <input type="text" id="topic" placeholder="e.g. Canva templates, burnout, content goblins" required/>
+
+      <button type="submit">🔥 Generate Post</button>
+    </form>
+
+    <div id="outputContainer" class="hidden">
+      <h2>Your Chaos Draft:</h2>
+      <pre id="output"></pre>
+      <button id="saveBtn">💾 Save to Content Dungeon</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
